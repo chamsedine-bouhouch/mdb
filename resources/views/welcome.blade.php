@@ -91,7 +91,7 @@ select {
 
 
   <!-- Start your project here-->  
-  <nav class="navbar fixed-top .scrolling-navbar navbar-expand-lg navbar-dark  " style="background-color: #001730">
+  <nav class="navbar fixed-top .scrolling-navbar navbar-expand-lg  navbar-dark blue-gradient" style="background-color: #001730">
   <a class="navbar-brand" href="#"> <img src="{{asset('asset/img/logowhite.png')}}" height="30px" width="100px"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
