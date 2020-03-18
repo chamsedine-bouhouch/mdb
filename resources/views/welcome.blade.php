@@ -24,7 +24,28 @@
 
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
    
+<!-- old temp -->
+ <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+  
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
    
 
 </head>
@@ -88,10 +109,7 @@ select {
 
 </style>
 <body>
-
-
-  <!-- Start your project here-->  
-  <nav class="navbar fixed-top .scrolling-navbar navbar-expand-lg  navbar-dark blue-gradient" style="background-color: #001730">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark blue-gradient">
   <a class="navbar-brand" href="#"> <img src="{{asset('asset/img/logowhite.png')}}" height="30px" width="100px"> </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,7 +138,7 @@ select {
         </li>
         
       </ul>
-<form class="form-inline">
+      <form class="form-inline">
         <div class="md-form my-0">
          <ul class="navbar-nav ml-auto nav-flex-icons">
       <li class="nav-item">
@@ -144,6 +162,9 @@ select {
       </form>
     </div>
   </nav>
+
+
+                                                                                                                                            
           
   <!--Main layout-->
   <main>
@@ -573,7 +594,129 @@ select {
 </div>
 
 <!-- témoi -->
+<!-- testimony -->
+<section class="ftco-section testimony-section">
+  <div class="container">
+    <div class="row ftco-animate">
+     <div class="col-md-6 col-lg-6 col-xl-4">
+      <div class="heading-section ftco-animate">
+        <span class="subheading">Services</span>
+        <h2 class="mb-4">La garantie Dépannage à Domicile</h2>
+      </div>
+      <div class="services-flow">
+       <div class="services-2 p-4 d-flex ftco-animate">
+        <div class="icon" style="color:#fe4a49 ">
+         <span class="flaticon-engineer"></span>
+       </div>
+       <div class="text">
+         <h3>Expert &amp; Professional</h3>
+         <p>Nos techniciens sont sélectionnés pour vous offrir la meilleure prestation.</p>
+       </div>
+     </div>
+     <div class="services-2 p-4 d-flex ftco-animate">
+      <div class="icon">
+       <span class="flaticon-engineer-1"></span>
+     </div>
+     <div class="text">
+       <h3>Service Après Vente</h3>
+       <p>Darydar vous propose un grantie de ces interventions</p>
+     </div>
+   </div>
+   <div class="services-2 p-4 d-flex ftco-animate">
+    <div class="icon">
+     <span class="flaticon-engineer-2"></span>
+   </div>
+   <div class="text">
+     <h3>7/7 Assistance Client</h3>
+     <p>Nous sommes à votre disposition toute la semaine</p>
+   </div>
+ </div>
+</div>
+</div>
 
+<div class="col-xl-1 d-xl-block d-none"></div>
+<div class="col-md-6 col-lg-6 col-xl-7">
+ <div class="heading-section ftco-animate mb-5">
+  <span class="subheading"> Témoignage</span>
+  <h2 class="mb-4">Clients Satisfaits</h2>
+  <p>Les témoignages de nos clients</p>
+</div>
+<div class="carousel-testimony owl-carousel">
+  <div class="item">
+    <div class="testimony-wrap">
+      <div class="text bg-light p-4">
+       <span class="quote d-flex align-items-center justify-content-center">
+        <i class="icon-quote-left"></i>
+      </span>
+      <p> Merci Darydar pour la qualité de service que j’ai eu, pour votre disponibilité et votre patience à toute preuve. Je recommande ! </p>
+      <p class="name">Menel.A</p>
+      <span class="position">Consultante</span>
+    </div>
+    <div class="user-img" style="background-image: url()">
+    </div>
+  </div>
+</div>
+<div class="item">
+  <div class="testimony-wrap">
+    <div class="text bg-light p-4">
+     <span class="quote d-flex align-items-center justify-content-center">
+      <i class="icon-quote-left"></i>
+    </span>
+    <p> Service de qualité exceptionnelle, technicien compétent. Mon problème a été résolu en moins d’une heure. </p>
+    <p class="name">Mehrez</p>
+    <span class="position">commerçant</span>
+  </div>
+  <div class="user-img" style="background-image: url()">
+  </div>
+</div>
+</div>
+<div class="item">
+  <div class="testimony-wrap">
+    <div class="text bg-light p-4">
+     <span class="quote d-flex align-items-center justify-content-center">
+      <i class="icon-quote-left"></i>
+    </span>
+    <p>J’ai adoré le devis en ligne, c’est nouveau en Tunisie et ça permet d’éviter les mauvaises surprises. </p>
+    <p class="name">Mourad</p>
+    <span class="position">Prof </span>
+  </div>
+  <div class="user-img" style="background-image: url()">
+  </div>
+</div>
+</div>
+<!-- <div class="item">
+  <div class="testimony-wrap">
+    <div class="text bg-light p-4">
+     <span class="quote d-flex align-items-center justify-content-center">
+      <i class="icon-quote-left"></i>
+    </span>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <p class="name">Rodel Golez</p>
+    <span class="position">Striper</span>
+  </div>
+  <div class="user-img" style="background-image: url(images/person_4.jpg)">
+  </div>
+</div>
+</div> -->
+<div class="item">
+  <div class="testimony-wrap">
+    <div class="text bg-light p-4">
+     <span class="quote d-flex align-items-center justify-content-center">
+      <i class="icon-quote-left"></i>
+    </span>
+    <p> Le technicien est venu à 21H pour réparer une fuite d’eau ! Il m’a sauvé la vie.</p>
+    <p class="name">Oussama</p>
+    <span class="position">Manager</span>
+  </div>
+  <div class="user-img" style="background-image: url()">
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
   
 
 
@@ -720,8 +863,30 @@ select {
   <script type="text/javascript" src="{{asset('asset/js/bootstrap.min.js')}}"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="{{asset('asset/js/mdb.min.js')}}"></script>
+  <!-- old template js -->
+  <script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+
+
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript">
+
   (function ($){
   $.fn.counter = function() {
     const $this = $(this),
