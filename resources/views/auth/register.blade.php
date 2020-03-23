@@ -1,84 +1,105 @@
-<div class="container" style="height: auto;">
-    <div class="row align-items-center">
-        <div class="col-lg-auto col-md-6 col-sm-8 ml-auto mr-auto">
-            <div class="panel panel-default">
-                
+@extends('layouts.app')
 
-                    <div class="panel-body">
-                    <button type="submit"  class="btn btn-primary d-flex align-items-center justify-content-center" data-toggle="modal"  data-backdrop="static" data-keyboard="false" data-target="#registerForm">Register</button>
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Register') }}</div>
 
-                <!-- Modal -->
-<div class="modal fade" id="registerForm" tabindex="-1" role="dialog" aria-hidden="true">
-<div class="modal-dialog modal-lg" style="hieght:0px;width:0px;">
-    <div class="modal-content">
-    	 <div class="modal-body ">
-        
-            <div class="loginBox_register align-items-center mb-5">
-     	
-         <h3  class="align-items-center">Créer un compte</h3>
-         
-     	<form class="form-horizontal" method="POST" action="{{ route('register') }}">
-                        {{ csrf_field() }}
-     		<div class="inputBox_register form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-             <label for="name" class="col-md-4 control-label"></label>
-                    <input id="name" type="name" class="inputBox_register" name="name" placeholder="name" value="{{ old('name') }}" required autofocus>
-                    <span>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
+                <div class="card-body">
+                    <form method="POST" action="{{ route('register') }}">
+                        @csrf
+
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('nom') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('nom') ? ' is-invalid' : '' }}" name="nom" value="{{ old('nom') }}" required autofocus>
+
+                                @if ($errors->has('nom'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('nom') }}</strong>
                                     </span>
                                 @endif
-                </span>
-                </div>
-                    <div class="inputBox_register form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                    <label for="email" class="col-md-4 control-label"></label>
-     			<input id="email" type="email" class="inputBox_register" name="email" placeholder="email" value="{{ old('email') }}" required>
-                 <span><i class="fas fa-envelope" aria-hidden="true"></i>
-                 @if ($errors->has('email'))
-                                    <span class="help-block">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('prenom') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control{{ $errors->has('prenom') ? ' is-invalid' : '' }}" name="prenom" value="{{ old('prenom') }}" required autofocus>
+
+                                @if ($errors->has('prenom'))
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('prenom') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="name" type="text" class="form-control{{ $errors->has('phone') ? ' is-invalid' : '' }}" name="phone" value="{{ old('phone') }}" required autofocus>
+
+                            @if ($errors->has('phone'))
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('phone') }}</strong>
+                                </span>
+                            @endif
+                        </div>
+                        <div class="col-md-6">
+                          <select name="role" id="">
+                            <option value="simple User">simple User</option>
+                            <option value="technicien">technicien</option>
+                          </select>
+                    </div>
+
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+
+                                @if ($errors->has('email'))
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-            </span>
-     		</div>
-     		<div class="inputBox_register form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-             <label for="password" class="col-md-4 control-label"></label>
-     			<input id="password" type="password" class="inputBox_register" name="password" placeholder="password"  required>
-                 <span><i class="fa fa-lock" aria-hidden="true"></i>
-                 @if ($errors->has('password'))
-                                    <span class="help-block">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
+                            </div>
+                        </div>
 
-            </span></div>
-                    <div class="inputBox_register form-group">
-                    <label for="password-confirm" class="col-md-4 control-label"></label>
-                    <input id="password_confirm" type="password" class="inputBox_register" name="password_confirmation" placeholder="Confirm password" required>
-                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-     		</div>
-             
-            
-                            
-                                <input type="submit" name="register" class="inputBox_register btn btn-info" value="register">
-    
+                        <div class="form-group row">
+                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
-                         
-         </form>
-         <div class="modal-footer" id="modal_footer">
-                    <!--<input id="btnSubmit" name="btnSubmit" value="Donate" class="btn btn-default-border-blk" type="submit">-->
-                    <!-- <button type="button" class="btn btn-primary mt-10" data-dismiss="modal" > Close </input>  -->
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">Fermer X<span aria-hidden="true" class="ion-android-close"></span> </button>
-     	
-     	
-     </div>
-        </div>
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                            </div>
+                        </div>
 
-    </div>
-</div>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                    {{ __('Register') }}
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+@endsection

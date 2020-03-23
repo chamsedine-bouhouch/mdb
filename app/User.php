@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nom','prenom','phone','enable','solde','image','revenue','points','rating','statue','role', 'email', 'password',
     ];
 
     /**
@@ -36,4 +36,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function DemandePasser()
+    {
+        return $this->hasMany('App\Demande','foreign_key','nullable');
+    }
+
+    public function Demande_a_accepter()
+    {
+        return $this->hasMany('App\Demande','foreign_key','nullable');
+    }
+
+   
 }
