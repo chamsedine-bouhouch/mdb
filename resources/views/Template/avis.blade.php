@@ -42,11 +42,10 @@
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg" class="rounded-circle z-depth-1 img-fluid">
                 </div>
                 <!--Content-->
-                <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Oussama</h4>
+                <h6 class="font-weight-bold blue-text my-3">Manager</h6>
                 <p class="font-weight-normal dark-grey-text">
-                  <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                  eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
+                  <i class="fas fa-quote-left pr-2"></i>Le technicien est venu à 21H pour réparer une fuite d’eau ! Il m’a sauvé la vie.</p>
                 <!--Review-->
                 <div class="orange-text">
                   <i class="fas fa-star"> </i>
@@ -69,11 +68,10 @@
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg" class="rounded-circle z-depth-1 img-fluid">
                 </div>
                 <!--Content-->
-                <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Mourad</h4>
+                <h6 class="font-weight-bold blue-text my-3">Prof</h6>
                 <p class="font-weight-normal dark-grey-text">
-                  <i class="fas fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
+                  <i class="fas fa-quote-left pr-2"></i>J’ai adoré le devis en ligne, c’est nouveau en Tunisie et ça permet d’éviter les mauvaises surprises.</p>
                 <!--Review-->
                 <div class="orange-text">
                   <i class="fas fa-star"> </i>
@@ -96,11 +94,10 @@
                   <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle z-depth-1 img-fluid">
                 </div>
                 <!--Content-->
-                <h4 class="font-weight-bold dark-grey-text mt-4">Maria Kate</h4>
-                <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
+                <h4 class="font-weight-bold dark-grey-text mt-4">Mehrez</h4>
+                <h6 class="font-weight-bold blue-text my-3">Commerçant</h6>
                 <p class="font-weight-normal dark-grey-text">
-                  <i class="fas fa-quote-left pr-2"></i>At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque corrupti.</p>
+                  <i class="fas fa-quote-left pr-2"></i>AService de qualité exceptionnelle, technicien compétent. Mon problème a été résolu en moins d’une heure.</p>
                 <!--Review-->
                 <div class="orange-text">
                   <i class="fas fa-star"> </i>
