@@ -101,12 +101,12 @@ class serviceController extends Controller
       {
        foreach($services as $row)
        {
-        $output .=   '<div class="col-sm-6 col-lg-4 mb-4">
-        <div class="card mb-4" style="height: 450px;width: 200px">
+        $output .=   '<div class="col-sm-6 col-lg-4 text-center">
+        <div class="card mb-4" style="height: 450px;width: 250px">
       
         <!--Card image-->
         <div class="view overlay">
-        <img class="card-img-top" src="/img/'.$row->image.' " alt="Card image cap" style="height: 200px;width: 230px">
+        <img class="card-img-top" src="/img/'.$row->image.' " alt="Card image cap" style="height: 250px;width: 250px">
           <a href="/step1">
             <div class="mask rgba-white-slight"></div>
           </a>

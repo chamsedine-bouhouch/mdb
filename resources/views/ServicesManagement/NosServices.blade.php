@@ -1,13 +1,13 @@
 @extends('Template.welcome',['titre'=>'Liste Services'])
 @section('contenu')
-<div class="row ">
+<div class="row ml-2">
 <div class="col-md-3 ">  
 
-  <div class="container  py-5 z-depth-1">
+ 
 
 
     <!--Section: Content-->
-    <section class=" d-flex">
+    <section class=" d-flex container  py-5 z-depth-1">
 
       
 
@@ -116,7 +116,7 @@
     <!--Section: Content-->
 
 
-  </div>
+
 
 <!--   <div style="border: solid  0.5px; border-color: grey " class="p-3" >
     <h3 style="text-align: center;" class="mb-3">Categorie</h3>
@@ -156,8 +156,8 @@
     </div> -->
     
     </div>
-<div class="col-md-6">
- <div class="row mb-5">
+<div class="col-md-8">
+ <div class="row">
 
   <div class="card-deck" id="sear">
 
@@ -192,20 +192,6 @@
     </div>
 
 
-<script>
-  $(document).ready(function(){
-    $('.First').click(function(){
-      $('.pagination').find('.page-item active').First().addClass('active');
-      $('.pagination').find('.page-item active').Last().addClass('active');
-         
-    })
-    $('.Last').click(function(){
-      $('.pagination').find('.page-item active').Last().addClass('active');
-      $('.pagination').find('.page-item active').First().addClass('active');
-         
-    })
-  })
-</script>
  
  </div>
 
